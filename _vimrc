@@ -8,7 +8,10 @@ colorscheme inkpot
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " allways show status line
 set ls=2
+set ignorecase
 set number
+" keep cursor away from the top/bottom
+set scrolloff=5
 set hlsearch
 set incsearch
 set visualbell
@@ -35,19 +38,24 @@ map [ :exec("tag ".expand("<cword>"))<CR>
 nmap t :NERDTreeToggle<CR>
 nnoremap ; :
 imap jj <Esc>
+map N Nzz
+map n nzz
 
 hi ColorColumn ctermbg=DarkGray
 
-" Sane Ignore For ctrlp
+" make ctrlp easier to use
 let g:ctrlp_by_filename = 1
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 0
 
-" Creating directories if they don't exist
+" creating directories if they don't exist
 silent execute '!mkdir -p $HOME/.vimbackup'
 silent execute '!mkdir -p $HOME/.vimswap'
 silent execute '!mkdir -p $HOME/.vimviews'
 
+" include template when creating a new file
 autocmd! BufNewFile * silent! 0r ~/.vim/templates/tmpl.%:e
 " remove spaces at the end of lines
 :au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+" automatically cd into the directory that the file is in
+autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
