@@ -5,7 +5,6 @@ filetype detect
 
 colorscheme inkpot
 
-set mouse=a
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " allways show status line
 set ls=2
@@ -35,7 +34,6 @@ set backspace=2
 map [ :exec("tag ".expand("<cword>"))<CR>
 nmap t :NERDTreeToggle<CR>
 nnoremap ; :
-nnoremap : ;
 imap jj <Esc>
 
 hi ColorColumn ctermbg=DarkGray
