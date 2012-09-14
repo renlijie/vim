@@ -57,5 +57,6 @@ silent execute '!mkdir -p $HOME/.vimviews'
 autocmd! BufNewFile * silent! 0r ~/.vim/templates/tmpl.%:e
 " remove spaces at the end of lines
 :au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-" automatically cd into the directory that the file is in
-autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
+" automatically cd into the directory that the file is in (conflicts with
+" fugitive)
+"autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
