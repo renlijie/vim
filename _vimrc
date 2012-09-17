@@ -38,8 +38,6 @@ map [ :exec("tag ".expand("<cword>"))<CR>
 nmap t :NERDTreeToggle<CR>
 nnoremap ; :
 imap jj <Esc>
-map N Nzz
-map n nzz
 
 hi ColorColumn ctermbg=DarkGray
 
