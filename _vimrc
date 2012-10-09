@@ -6,7 +6,7 @@ filetype detect
 colorscheme inkpot
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-" allways show status line
+" always show status line
 set ls=2
 set ignorecase
 set number
@@ -33,6 +33,7 @@ set hidden
 " Make backspace not be completely broken -
 " http://vim.wikia.com/wiki/Erasing_previously_entered_characters_in_insert_mode
 set backspace=2
+set diffopt+=iwhite
 
 map [ :exec("tag ".expand("<cword>"))<CR>
 nmap t :NERDTreeToggle<CR>
