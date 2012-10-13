@@ -21,6 +21,8 @@ set shiftwidth=2
 set autoindent
 set ruler
 set wildignore=*.pyc,*.o,*.obj,*.class,.git,*~
+set wildmenu
+set wildmode=list:longest,full
 set backup
 set backupdir=$HOME/.vimbackup
 set directory=$HOME/.vimswap
