@@ -8,7 +8,7 @@ colorscheme inkpot
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " always show status line
 set ls=2
-set ignorecase
+" set ignorecase
 set number
 " keep cursor away from the top/bottom
 set scrolloff=5
