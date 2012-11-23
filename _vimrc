@@ -5,6 +5,8 @@ filetype detect
 
 colorscheme inkpot
 
+let mapleader = 'm'
+
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " always show status line
 set ls=2
