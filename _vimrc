@@ -41,6 +41,7 @@ set diffopt+=iwhite
 
 map [ :exec("tag ".expand("<cword>"))<CR>
 nmap t :NERDTreeToggle<CR>
+map <leader>f :NERDTreeFind<cr>
 nnoremap ; :
 imap jj <Esc>
 
@@ -50,6 +51,12 @@ hi ColorColumn ctermbg=DarkGray
 let g:ctrlp_by_filename = 1
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 0
+
+" buffergator
+let g:buffergator_viewport_split_policy = "T"
+let g:buffergator_autoexpand_on_split = 0
+let g:buffergator_split_size = 5
+let g:buffergator_display_regime = "filepath"
 
 " creating directories if they don't exist
 silent execute '!mkdir -p $HOME/.vimbackup'
