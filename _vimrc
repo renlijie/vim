@@ -42,6 +42,7 @@ set diffopt+=iwhite
 map [ :exec("tag ".expand("<cword>"))<CR>
 nmap t :NERDTreeToggle<CR>
 map <leader>f :NERDTreeFind<cr>
+nnoremap <silent> <leader>p :ClearCtrlPCache<cr>\|:CtrlP<cr>
 nnoremap ; :
 imap jj <Esc>
 
