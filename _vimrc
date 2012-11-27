@@ -22,7 +22,7 @@ set tabstop=2
 set shiftwidth=2
 set autoindent
 set ruler
-set wildignore=*.pyc,*.o,*.obj,*.class,.git,*~
+set wildignore=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.o,*.obj,*.class,.git,*~
 set wildmenu
 set wildmode=list:longest,full
 set backup
