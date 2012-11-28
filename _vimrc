@@ -49,9 +49,14 @@ imap jj <Esc>
 hi ColorColumn ctermbg=DarkGray
 
 " make ctrlp easier to use
+let g:ctrlp_max_files = 0
+let g:ctrlp_max_depth = 100
 let g:ctrlp_by_filename = 1
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_max_height = 20
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\/Users\/lijie\/Library\/\|\/Users\/lijie\/Applications\/', }
 
 " buffergator
 let g:buffergator_viewport_split_policy = "T"
