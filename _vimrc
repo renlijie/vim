@@ -64,6 +64,11 @@ let g:buffergator_autoexpand_on_split = 0
 let g:buffergator_split_size = 5
 let g:buffergator_display_regime = "filepath"
 
+" superTab
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+set complete=.,w
+
 " creating directories if they don't exist
 silent execute '!mkdir -p $HOME/.vimbackup'
 silent execute '!mkdir -p $HOME/.vimswap'
