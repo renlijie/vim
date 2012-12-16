@@ -7,7 +7,6 @@ colorscheme inkpot
 
 let mapleader = 'm'
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 " always show status line
 set ls=2
 " set ignorecase
@@ -41,8 +40,8 @@ set diffopt+=iwhite
 
 map [ :exec("tag ".expand("<cword>"))<CR>
 nmap t :NERDTreeToggle<CR>
-map <leader>f :NERDTreeFind<cr>
-nnoremap <silent> <leader>p :ClearCtrlPCache<cr>\|:CtrlP<cr>
+map <leader>f :NERDTreeFind<CR>
+nmap <leader>c :%s//g<CR>
 nnoremap ; :
 imap jj <Esc>
 
@@ -56,7 +55,7 @@ let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\/Users\/lijie\/Library\/\|\/Users\/lijie\/Applications\/', }
+  \ 'dir': '\/Users\/lijie\/Library\/\|\/Users\/lijie\/Applications\/\|\/Users\/lijie\/Desktop\/', }
 
 " buffergator
 let g:buffergator_viewport_split_policy = "T"
