@@ -16,13 +16,14 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'jeetsukumaran/vim-buffergator'
+Bundle 'aghareza/vim-gitgrep'
 
 syntax on
 
 "filetype plugin on
 "filetype detect
 
-"colorscheme inkpot
+colorscheme inkpot
 
 let mapleader = 'm'
 
