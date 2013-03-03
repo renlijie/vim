@@ -22,7 +22,7 @@ syntax on
 "filetype plugin on
 "filetype detect
 
-colorscheme inkpot
+"colorscheme inkpot
 
 let mapleader = 'm'
 
