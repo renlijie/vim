@@ -1,7 +1,26 @@
+set nocompatible               " be iMproved
+filetype off                   " required!
+filetype plugin indent on      " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'ervandew/supertab'
+Bundle 'jeetsukumaran/vim-buffergator'
+
 syntax on
 
-filetype plugin on
-filetype detect
+"filetype plugin on
+"filetype detect
 
 colorscheme inkpot
 
@@ -29,7 +48,6 @@ set backupdir=$HOME/.vimbackup
 set directory=$HOME/.vimswap
 set viewdir=$HOME/.vimviews
 set cursorline
-set colorcolumn=121
 set tags=./tags;/
 " http://stackoverflow.com/questions/2732267/vim-loses-undo-history-when-changing-buffers
 set hidden
@@ -38,10 +56,15 @@ set hidden
 set backspace=2
 set diffopt+=iwhite
 
+" ctags: go to declaration
 map [ :exec("tag ".expand("<cword>"))<CR>
+" toggle NerdTree view
 nmap t :NERDTreeToggle<CR>
+" find current file in NerdTree view
 map <leader>f :NERDTreeFind<CR>
+" change newline to linux style
 nmap <leader>c :%s//g<CR>
+
 nnoremap ; :
 imap jj <Esc>
 
