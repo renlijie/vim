@@ -17,19 +17,25 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'aghareza/vim-gitgrep'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Lokaltog/powerline'
 
-syntax on
+syntax enable
+set background=dark
+colorscheme solarized
+
+"syntax on
+"colorscheme inkpot
 
 "filetype plugin on
 "filetype detect
-
-colorscheme inkpot
 
 let mapleader = 'm'
 
 " always show status line
 set ls=2
-" set ignorecase
+set ignorecase
 set number
 " keep cursor away from the top/bottom
 set scrolloff=5
