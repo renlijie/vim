@@ -19,7 +19,6 @@ Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'aghareza/vim-gitgrep'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/powerline'
 
 syntax enable
 set background=dark
