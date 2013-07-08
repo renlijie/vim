@@ -14,11 +14,11 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
 Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'aghareza/vim-gitgrep'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'Valloric/YouCompleteMe'
 
 syntax enable
 set background=dark
