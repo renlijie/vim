@@ -1,4 +1,9 @@
 set nocompatible               " be iMproved
+
+source /usr/share/vim/google/google.vim
+Glug youcompleteme-google
+
+set noeb vb t_vb=              " disable beeping
 filetype off                   " required!
 filetype plugin indent on      " required!
 
@@ -18,7 +23,6 @@ Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'aghareza/vim-gitgrep'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'Valloric/YouCompleteMe'
 
 syntax enable
 set background=dark
