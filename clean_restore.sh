@@ -9,11 +9,6 @@ echo ""
 echo ">>> BundleInstall"
 mvim +BundleInstall +qall
 
-echo ">>> compiling YouCompleteMe"
-cd ~/.vim/bundle/YouCompleteMe
-./install.sh --clang-completer
-echo ""
-
 echo ">>> creating .vimrc and .gvimrc"
 echo "source $HOME/.vim/_vimrc" > ~/.vimrc
 echo "source $HOME/.vim/_gvimrc" > ~/.gvimrc
