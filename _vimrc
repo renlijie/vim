@@ -24,12 +24,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-"syntax on
-"colorscheme inkpot
-
-"filetype plugin on
-"filetype detect
-
 let mapleader = 'm'
 
 " always show status line
@@ -92,11 +86,6 @@ let g:buffergator_viewport_split_policy = "T"
 let g:buffergator_autoexpand_on_split = 0
 let g:buffergator_split_size = 5
 let g:buffergator_display_regime = "filepath"
-
-" superTab
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
-set complete=.,w
 
 " creating directories if they don't exist
 silent execute '!mkdir -p $HOME/.vimbackup'
